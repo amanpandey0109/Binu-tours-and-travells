@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binu Tours &amp; Travels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="Binu Tours and Travels home">
+        <span class="icon-badge icon-badge-brand">
+          <i class="fas fa-location-arrow"></i>
+        </span>
+        <span class="logo-copy">
+          <span class="logo-text">Binu Tours</span>
+          <span class="logo-subtitle">&amp; Travels</span>
+        </span>
+      </a>
+      <nav class="nav-menu">
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#plans" class="nav-link">Plans</a>
+        <a href="#vehicles" class="nav-link">Fleet</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <details class="contact-menu">
+          <summary class="nav-link contact-trigger" aria-label="Contact numbers">Contact</summary>
+          <div class="contact-dropdown">
+            <a href="tel:9648811494" class="contact-number">9648811494</a>
+            <a href="tel:8874704581" class="contact-number">8874704581</a>
+          </div>
+        </details>
+        <a href="#booking" class="nav-link booking-btn">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <span class="hero-eyebrow">Trusted tours, premium rides, seamless pilgrimage planning</span>
+          <h1>Binu Tours &amp; Travels</h1>
+          <div class="hero-actions">
+            <button type="button" class="primary-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
+              <span class="icon-badge icon-badge-hero">
+                <i class="fas fa-plane-departure"></i>
+              </span>
+              Start Booking
+            </button>
+            <a class="secondary-btn" href="tel:9648811494">Call for Instant Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip section-shell">
+      <div class="trust-grid">
+        <article class="trust-item">
+          <i class="fas fa-shield-heart"></i>
+          <div>
+            <h3>Reliable Service</h3>
+            <p>Clear coordination, timely pickup, and attentive support throughout the trip.</p>
+          </div>
+        </article>
+        <article class="trust-item">
+          <i class="fas fa-map-location-dot"></i>
+          <div>
+            <h3>Popular Routes</h3>
+            <p>Varanasi, Prayagraj, Ayodhya, Vrindavan, and fully customized travel plans.</p>
+          </div>
+        </article>
+        <article class="trust-item">
+          <i class="fas fa-users"></i>
+          <div>
+            <h3>For Every Group</h3>
+            <p>Comfortable options for couples, families, and medium-sized travel groups.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="packages section-shell" id="packages">
+      <span class="section-kicker">Signature Experiences</span>
+      <h2>Our Tour Packages</h2>
+      <p class="section-intro">Curated travel packages with smooth transport, planned stops, and dependable assistance for sacred journeys and weekend escapes.</p>
+      <div class="packages-grid">
+        <article class="card">
+          <img src="images/vns.jpg" alt="Varanasi ghats">
+          <div class="card-body">
+            <span class="card-tag">Most Requested</span>
+            <h3>Varanasi Tour</h3>
+            <p>2 Days / 1 Night</p>
+            <p class="price">Custom quote available</p>
+            <p>Ideal for darshan, ghat visit, and evening aarti experience.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/sedan.jpg" alt="Prayagraj travel package">
+          <div class="card-body">
+            <span class="card-tag">Family Friendly</span>
+            <h3>Prayagraj Tour</h3>
+            <p>2 Days / 1 Night</p>
+            <p class="price">From Rs. 4999</p>
+            <p>Toll charges not included. Comfortable city and temple route planning.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/bus.jpg" alt="Ayodhya travel package">
+          <div class="card-body">
+            <span class="card-tag">Pilgrimage Special</span>
+            <h3>Ayodhya Tour</h3>
+            <p>2 Days / 1 Night</p>
+            <p class="price">From Rs. 6999</p>
+            <p>Temple-focused route with flexible timing for family or group travel.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/traveller.avif" alt="Vrindavan trip">
+          <div class="card-body">
+            <span class="card-tag">Group Option</span>
+            <h3>Vrindavan Tour</h3>
+            <p>3 Days / 2 Nights</p>
+            <p class="price">From Rs. 2999 per person</p>
+            <p>Best for devotional trips with larger groups and flexible itinerary support.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="travel-plans section-shell" id="plans">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="section-kicker">Travel Itineraries</span>
+          <h2>Detailed Travel Plans</h2>
+        </div>
+        <p class="section-intro">Day-wise schedules created for smooth darshan timing, sightseeing flow, food breaks, and relaxed road travel.</p>
+      </div>
+      <div class="plan-container">
+        <article class="plan-box featured-plan">
+          <div class="plan-header">
+            <h3>Varanasi and Ayodhya</h3>
+            <span>Popular</span>
+          </div>
+          <ul>
+            <li><strong>05:00 AM:</strong> Subah-e-Banaras and Assi Ghat boat ride</li>
+            <li><strong>07:00 AM:</strong> Kashi Vishwanath Temple darshan</li>
+            <li><strong>12:00 PM:</strong> Lunch and rest break</li>
+            <li><strong>01:00 PM:</strong> Local sightseeing and cultural stops</li>
+            <li><strong>06:00 PM:</strong> Evening Ganga Aarti at Dashashwamedh Ghat</li>
+            <li><strong>Day 2:</strong> Kanak Bhawan and Ayodhya local sightseeing</li>
+          </ul>
+        </article>
+        <article class="plan-box">
+          <div class="plan-header">
+            <h3>Custom Trip</h3>
+            <span>Flexible</span>
+          </div>
+          <ul>
+            <li><strong>Choose:</strong> Destination, duration, and travel dates</li>
+            <li><strong>Select:</strong> Sedan, Innova, Ertiga, or Traveller</li>
+            <li><strong>Add:</strong> Pickup, multiple stops, hotel coordination, and return planning</li>
+            <li><strong>Confirm:</strong> Final trip schedule over call or WhatsApp</li>
+          </ul>
+          <div class="plan-action">
+            <button type="button" class="book-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">Customize Now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vehicles section-shell" id="vehicles">
+      <span class="section-kicker">Executive Fleet</span>
+      <h2>Our Vehicles</h2>
+      <p class="section-intro">Clean, well-maintained vehicles selected for comfort, luggage space, and dependable long-route performance.</p>
+      <div class="vehicle-cards">
+        <article class="vehicle-card">
+          <img src="images/sedan.jpg" alt="Swift Dzire">
+          <div class="vehicle-copy">
+            <h3>Swift Dzire</h3>
+            <p class="vehicle-meta">Seats: 4 | AC</p>
+            <p>Comfortable option for couples, solo travelers, and small families.</p>
+          </div>
+        </article>
+        <article class="vehicle-card">
+          <img src="images/innova.avif" alt="Innova">
+          <div class="vehicle-copy">
+            <h3>Innova</h3>
+            <p class="vehicle-meta">Seats: 6 | AC</p>
+            <p>Premium comfort with extra legroom and luggage flexibility for long routes.</p>
+          </div>
+        </article>
+        <article class="vehicle-card">
+          <img src="images/bus.jpg" alt="Ertiga group travel">
+          <div class="vehicle-copy">
+            <h3>Ertiga / Group Cab</h3>
+            <p class="vehicle-meta">Seats: 6 | AC</p>
+            <p>Practical choice for larger families who want balanced space and comfort.</p>
+          </div>
+        </article>
+        <article class="vehicle-card">
+          <img src="images/traveller.avif" alt="Traveller vehicle">
+          <div class="vehicle-copy">
+            <h3>Traveller</h3>
+            <p class="vehicle-meta">Seats: 12-15 | AC</p>
+            <p>Spacious seating for pilgrimage groups, events, and multi-stop journeys.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-us section-shell" id="why-us">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="section-kicker">Why Choose Us</span>
+          <h2>A more dependable way to travel.</h2>
+        </div>
+        <p class="section-intro">We combine local route knowledge with practical trip planning so clients get clarity, comfort, and confidence before the journey even begins.</p>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <i class="fas fa-clock"></i>
+          <h3>On-Time Coordination</h3>
+          <p>Pickup planning and timing support designed to reduce last-minute confusion.</p>
+        </article>
+        <article class="value-card">
+          <i class="fas fa-comments"></i>
+          <h3>Direct Communication</h3>
+          <p>Simple booking process with direct call or WhatsApp follow-up for quick decisions.</p>
+        </article>
+        <article class="value-card">
+          <i class="fas fa-route"></i>
+          <h3>Flexible Routing</h3>
+          <p>Multi-stop travel and destination customization based on your family or group needs.</p>
+        </article>
+        <article class="value-card">
+          <i class="fas fa-star"></i>
+          <h3>Professional Experience</h3>
+          <p>A cleaner, more organized travel experience that feels planned instead of rushed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking section-shell" id="booking">
+      <span class="section-kicker">Reserve Your Journey</span>
+      <h2>Book Your Trip</h2>
+      <p class="section-intro">Share your destination, date, and preferred vehicle. We will contact you with confirmation and final travel details.</p>
+      <div class="booking-layout">
+        <div class="booking-info">
+          <div class="booking-info-card">
+            <h3>Quick Booking Support</h3>
+            <p>Get fast confirmation for temple tours, outstation rides, custom family plans, and pickup services.</p>
+            <div class="booking-points">
+              <span><i class="fas fa-phone"></i> 9648811494</span>
+              <span><i class="fas fa-phone"></i> 8874704581</span>
+              <span><i class="fas fa-location-dot"></i> Uttar Pradesh route support</span>
+            </div>
+          </div>
+        </div>
+        <div class="booking-container">
+          <form id="booking-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email">
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <select name="destination" required>
+              <option value="" disabled selected>Choose Destination</option>
+              <option value="varanasi">Varanasi</option>
+              <option value="prayagraj">Prayagraj</option>
+              <option value="ayodhya">Ayodhya</option>
+              <option value="vrindavan">Vrindavan</option>
+              <option value="custom">Custom Trip</option>
+            </select>
+            <select name="vehicle" required>
+              <option value="" disabled selected>Choose Vehicle</option>
+              <option value="dzire">Swift Dzire</option>
+              <option value="ertiga">Ertiga / Group Cab</option>
+              <option value="innova">Innova</option>
+              <option value="traveller">Traveller</option>
+            </select>
+            <input type="date" name="date" required>
+            <textarea name="requests" placeholder="Any Special Requests?" rows="4"></textarea>
+            <button type="submit" class="book-btn">Submit Booking</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>
+        <h3>Binu Tours &amp; Travels</h3>
+        <p>Comfortable rides, spiritual tour planning, and custom travel support for every journey.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:9648811494">9648811494</a>
+        <a href="tel:8874704581">8874704581</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
