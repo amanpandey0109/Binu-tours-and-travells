@@ -7,6 +7,7 @@ require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const publicDir = path.join(__dirname, "public");
 const BOOKING_ADVANCE_INR = parsePositiveInteger(process.env.BOOKING_ADVANCE_INR, 500);
 const BOOKING_ADVANCE_PAISE = BOOKING_ADVANCE_INR * 100;
 const ONLINE_PAYMENT_METHODS = new Set(["card", "upi", "netbanking", "wallet"]);
@@ -472,7 +473,7 @@ app.post("/razorpay-webhook", async (req, res) => {
   }
 });
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(publicDir));
 
 if (require.main === module) {
   app.listen(PORT, () => {
