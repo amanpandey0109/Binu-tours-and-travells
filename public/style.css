@@ -1899,8 +1899,8 @@ img { display: block; width: 100%; }
   }
 
   .hero-content {
-    width: min(calc(100vw - 32px), 320px);
-    margin-left: 16px;
+    width: min(calc(100vw - 48px), 320px);
+    margin-left: auto;
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
@@ -1915,7 +1915,7 @@ img { display: block; width: 100%; }
     max-width: 100%;
     min-width: 0;
     padding: 8px 12px;
-    justify-self: start;
+    justify-self: center;
   }
 
   .logo-copy {
