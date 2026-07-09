@@ -22,19 +22,38 @@
           <span class="logo-subtitle">&amp; Travels</span>
         </span>
       </a>
-      <nav class="nav-menu">
-        <a href="#packages" class="nav-link">Packages</a>
-        <a href="#plans" class="nav-link">Plans</a>
-        <a href="#vehicles" class="nav-link">Fleet</a>
-        <a href="#why-us" class="nav-link">Why Us</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="site-nav">
+        <a href="#packages" class="nav-link nav-link-icon">
+          <span class="nav-icon"><i class="fas fa-gift"></i></span>
+          <span>Packages</span>
+        </a>
+        <a href="#plans" class="nav-link nav-link-icon">
+          <span class="nav-icon"><i class="fas fa-map"></i></span>
+          <span>Plans</span>
+        </a>
+        <a href="#why-us" class="nav-link nav-link-icon">
+          <span class="nav-icon"><i class="fas fa-thumbs-up"></i></span>
+          <span>Why Us</span>
+        </a>
         <details class="contact-menu">
-          <summary class="nav-link contact-trigger" aria-label="Contact numbers">Contact</summary>
+          <summary class="nav-link contact-trigger nav-link-icon" aria-label="Contact numbers">
+            <span class="nav-icon"><i class="fas fa-headset"></i></span>
+            <span>Contact</span>
+          </summary>
           <div class="contact-dropdown">
             <a href="tel:9648811494" class="contact-number">9648811494</a>
             <a href="tel:8874704581" class="contact-number">8874704581</a>
           </div>
         </details>
-        <a href="#booking" class="nav-link booking-btn">Book Now</a>
+        <a href="#booking" class="nav-link booking-btn nav-link-icon">
+          <span class="nav-icon"><i class="fas fa-calendar-check"></i></span>
+          <span>Book Now</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -44,16 +63,20 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="hero-copy">
-          <span class="hero-eyebrow">Trusted tours, premium rides, seamless pilgrimage planning</span>
-          <h1>Binu Tours &amp; Travels</h1>
-          <div class="hero-actions">
-            <button type="button" class="primary-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
-              <span class="icon-badge icon-badge-hero">
-                <i class="fas fa-plane-departure"></i>
-              </span>
-              Start Booking Today
-            </button>
-            <a class="secondary-btn" href="tel:9648811494">Call for Instant Quote</a>
+          <div class="hero-owners hero-owners-inline" aria-label="Owner names">
+            <span class="hero-owners-label">Owners</span>
+            <span class="hero-owner-name">Anil Kumar Pandey</span>
+            <span class="hero-owner-name">Aman Pandey</span>
+          </div>
+          <h1><span class="hero-title-intro">Welcome to</span><span class="brand-heading">Binu Tours &amp; Travels</span></h1>
+          <p class="hero-lead">Professional cab service for temple tours, family trips, outstation travel, and custom route planning with dependable support at every step.</p>
+          <div class="hero-metrics" aria-label="Quick highlights">
+            <span class="hero-metric"><i class="fas fa-route"></i> Popular UP routes</span>
+            <span class="hero-metric"><i class="fas fa-car"></i> Clean AC vehicles</span>
+            <span class="hero-metric"><i class="fas fa-phone-volume"></i> Direct call support</span>
+          </div>
+          <div class="hero-footer-copy">
+            <span class="hero-eyebrow hero-eyebrow-secondary hero-bottom-tagline"><span class="hero-eyebrow-text hero-eyebrow-text-secondary">Travel Far, Travel Wide, Travel with Confidence.</span></span>
           </div>
         </div>
       </div>
@@ -62,7 +85,7 @@
     <section class="trust-strip section-shell">
       <div class="trust-grid">
         <article class="trust-item">
-          <i class="fas fa-shield-heart"></i>
+          <i class="fas fa-shield-alt"></i>
           <div>
             <h3>Reliable Service</h3>
             <p>Clear coordination, timely pickup, and attentive support throughout the trip.</p>
@@ -72,7 +95,7 @@
           <i class="fas fa-map-location-dot"></i>
           <div>
             <h3>Popular Routes</h3>
-            <p>Varanasi, Prayagraj, Ayodhya, Vrindavan, and fully customized travel plans.</p>
+            <p>Varanasi, Prayagraj, Vindhyachal, Maa Sharda Temple Maihar, Ayodhya, Vrindavan, Lucknow, and fully customized travel plans.</p>
           </div>
         </article>
         <article class="trust-item">
@@ -91,43 +114,49 @@
       <p class="section-intro">Curated travel packages with smooth transport, planned stops, and dependable assistance for sacred journeys and weekend escapes.</p>
       <div class="packages-grid">
         <article class="card">
-          <img src="images/vns.jpg" alt="Varanasi ghats">
+          <img src="images/vnss.jpg" alt="Varanasi ghats">
           <div class="card-body">
             <span class="card-tag">Most Requested</span>
             <h3>Varanasi Tour</h3>
-            <p>2 Days / 1 Night</p>
-            <p class="price">Custom quote available</p>
-            <p>Ideal for darshan, ghat visit, and evening aarti experience.</p>
+            <p class="price">from Rs.3000 Onwards</p>
+            <p>Pickup Location: Anywhere in Varanasi</p>
           </div>
         </article>
         <article class="card">
-          <img src="images/sedan.jpg" alt="Prayagraj travel package">
+          <img src="images/prj.jpg" alt="Prayagraj travel package">
           <div class="card-body">
             <span class="card-tag">Family Friendly</span>
             <h3>Prayagraj Tour</h3>
-            <p>2 Days / 1 Night</p>
-            <p class="price">From Rs. 4999</p>
-            <p>Toll charges not included. Comfortable city and temple route planning.</p>
+            <p class="price">From Rs. 3999 Onwards</p>
+            <p>Pickup Location: Varanasi</p>
           </div>
         </article>
         <article class="card">
-          <img src="images/bus.jpg" alt="Ayodhya travel package">
+          <img src="images/ayd.jpg" alt="Ayodhya travel package">
           <div class="card-body">
             <span class="card-tag">Pilgrimage Special</span>
             <h3>Ayodhya Tour</h3>
-            <p>2 Days / 1 Night</p>
-            <p class="price">From Rs. 6999</p>
-            <p>Temple-focused route with flexible timing for family or group travel.</p>
+            <p class="price">From Rs. 5999 Onwards</p>
+            <p>Pickup Location: Varanasi</p>
           </div>
         </article>
         <article class="card">
-          <img src="images/traveller.avif" alt="Vrindavan trip">
+          <img src="images/vindhy.webp" alt="Vindhyachal Travel package">
+          <div class="card-body">
+            <span class="card-tag">Pilgrimage Special</span>
+            <h3>Vindhyachal Tour</h3>
+            <p class="price">From Rs. 3999 Onwards</p>
+            <p>Pickup Location: Varanasi</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/vrd.jpg" alt="Vrindavan trip">
           <div class="card-body">
             <span class="card-tag">Group Option</span>
             <h3>Vrindavan Tour</h3>
             <p>3 Days / 2 Nights</p>
-            <p class="price">From Rs. 2999 per person</p>
-            <p>Best for devotional trips with larger groups and flexible itinerary support.</p>
+            <p class="price">From Rs. 3999 per person</p>
+            <p>Pickup Location: Varanasi</p>
           </div>
         </article>
       </div>
@@ -136,40 +165,66 @@
     <section class="travel-plans section-shell" id="plans">
       <div class="section-heading split-heading">
         <div>
-          <span class="section-kicker">Travel Itineraries</span>
-          <h2>Detailed Travel Plans</h2>
+          <h2 style="text-align: center;">Detailed Travel Plans</h2>
+          <p>बेहतरीन योजना, आसान सफर और यादगार अनुभव — यही है हमारे ट्रैवल प्लान्स की पहचान।</p>
         </div>
-        <p class="section-intro">Day-wise schedules created for smooth darshan timing, sightseeing flow, food breaks, and relaxed road travel.</p>
       </div>
-      <div class="plan-container">
+      <div class="plan-container professional-look">
         <article class="plan-box featured-plan">
           <div class="plan-header">
-            <h3>Varanasi and Ayodhya</h3>
-            <span>Popular</span>
+            <h3>Varanasi</h3>
           </div>
           <ul>
-            <li><strong>05:00 AM:</strong> Subah-e-Banaras and Assi Ghat boat ride</li>
-            <li><strong>07:00 AM:</strong> Kashi Vishwanath Temple darshan</li>
-            <li><strong>12:00 PM:</strong> Lunch and rest break</li>
-            <li><strong>01:00 PM:</strong> Local sightseeing and cultural stops</li>
-            <li><strong>06:00 PM:</strong> Evening Ganga Aarti at Dashashwamedh Ghat</li>
-            <li><strong>Day 2:</strong> Kanak Bhawan and Ayodhya local sightseeing</li>
+            <li> Kashi Vishwanath Temple</li>
+            <li> Dashashwamedh Ghat</li>
+            <li> Durga Mandir</li>
+            <li> Assi Ghat</li>
+            <li> New Vishwanath Temple</li>
           </ul>
         </article>
-        <article class="plan-box">
+        <article class="plan-box featured-plan">
           <div class="plan-header">
-            <h3>Custom Trip</h3>
-            <span>Flexible</span>
+            <h3>Prayagraj</h3>
           </div>
           <ul>
-            <li><strong>Choose:</strong> Destination, duration, and travel dates</li>
-            <li><strong>Select:</strong> Sedan, Innova, Ertiga, or Traveller</li>
-            <li><strong>Add:</strong> Pickup, multiple stops, hotel coordination, and return planning</li>
-            <li><strong>Confirm:</strong> Final trip schedule over call or WhatsApp</li>
+            <li> Civil Lines</li>
+            <li> Triveni Sangam</li>
+            <li> Anand Bhawan</li>
+            <li> Allahabad Fort</li>
+            <li> Khusro Bagh</li>
           </ul>
-          <div class="plan-action">
-            <button type="button" class="book-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">Customize Now</button>
+        </article>
+        <article class="plan-box featured-plan">
+          <div class="plan-header">
+            <h3>Ayodhya</h3>
           </div>
+          <ul>
+            <li> Saryu River Ghat</li>
+            <li> Ram Janmabhoomi</li>
+            <li> Hanuman Garhi</li>
+            <li> Kanak Bhawan</li>
+            <li> Treta Ke Thakur</li>
+          </ul>
+        </article>
+        <article class="plan-box featured-plan">
+          <div class="plan-header">
+            <h3>Vindhyachal</h3>
+          </div>
+          <ul>
+            <li> Maa Vindhyachal Mandir</li>
+          </ul>
+        </article>
+        <article class="plan-box featured-plan">
+          <div class="plan-header">
+            <h3>Vrindavan</h3>
+          </div>
+          <ul>
+            <li> Saryu River Ghat</li>
+            <li> Ram Janmabhoomi</li>
+            <li> Hanuman Garhi</li>
+            <li> Kanak Bhawan</li>
+            <li> Treta Ke Thakur</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -180,7 +235,7 @@
       <p class="section-intro">Clean, well-maintained vehicles selected for comfort, luggage space, and dependable long-route performance.</p>
       <div class="vehicle-cards">
         <article class="vehicle-card">
-          <img src="images/sedan.jpg" alt="Swift Dzire">
+          <img src="images/dzire.jpg" alt="Swift Dzire">
           <div class="vehicle-copy">
             <h3>Swift Dzire</h3>
             <p class="vehicle-meta">Seats: 4 | AC</p>
@@ -188,7 +243,7 @@
           </div>
         </article>
         <article class="vehicle-card">
-          <img src="images/innova.avif" alt="Innova">
+          <img src="images/Innova-Crysta.avif" alt="Innova">
           <div class="vehicle-copy">
             <h3>Innova</h3>
             <p class="vehicle-meta">Seats: 6 | AC</p>
@@ -196,17 +251,17 @@
           </div>
         </article>
         <article class="vehicle-card">
-          <img src="images/bus.jpg" alt="Ertiga group travel">
+          <img src="images/errr.avif" alt="Ertiga group travel">
           <div class="vehicle-copy">
-            <h3>Ertiga / Group Cab</h3>
+            <h3>Ertiga</h3>
             <p class="vehicle-meta">Seats: 6 | AC</p>
             <p>Practical choice for larger families who want balanced space and comfort.</p>
           </div>
         </article>
         <article class="vehicle-card">
-          <img src="images/traveller.avif" alt="Traveller vehicle">
+          <img src="images/urba.avif" alt="Traveller vehicle">
           <div class="vehicle-copy">
-            <h3>Traveller</h3>
+            <h3>Urbania</h3>
             <p class="vehicle-meta">Seats: 12-15 | AC</p>
             <p>Spacious seating for pilgrimage groups, events, and multi-stop journeys.</p>
           </div>
@@ -219,8 +274,8 @@
         <div>
           <span class="section-kicker">Why Choose Us</span>
           <h2>A more dependable way to travel.</h2>
+          <p>We combine local route knowledge with practical trip planning so clients get clarity, comfort, and confidence before the journey even begins.</p>
         </div>
-        <p class="section-intro">We combine local route knowledge with practical trip planning so clients get clarity, comfort, and confidence before the journey even begins.</p>
       </div>
       <div class="value-grid">
         <article class="value-card">
@@ -246,42 +301,89 @@
       </div>
     </section>
 
+    <section class="custom-tour-section section-shell" id="custom-tour">
+      <div class="custom-tour-content">
+        <h2>Create Your Custom Tour</h2>
+        <p class="custom-tour-desc">Tell us your destination, preferences, and budget. We'll craft a personalized travel experience just for you.</p>
+        <form class="custom-tour-form" id="custom-tour-form">
+          <input type="text" name="custom_pickup_location" placeholder="Pickup Location" required>
+          <input type="text" name="custom_destination_input" placeholder="Your Destination (e.g.,anywhere in U.P)" required>
+          <textarea name="custom_preferences" placeholder="Tell us about your preferences..." rows="3"></textarea>
+          <button type="submit" class="custom-tour-btn">Submit Custom Request</button>
+        </form>
+      </div>
+    </section>
+
     <section class="booking section-shell" id="booking">
       <span class="section-kicker">Reserve Your Journey</span>
       <h2>Book Your Trip</h2>
       <p class="section-intro">Share your destination, date, and preferred vehicle. We will contact you with confirmation and final travel details.</p>
+      <p style="text-align: center; font-weight: 600; color: #0f5f7f; margin-bottom: 24px; font-size: 1.05rem;">
+        <i class="fas fa-info-circle" style="margin-right: 8px;"></i> Booking Charges: <span id="booking-advance-amount" style="font-size: 1.2rem;">₹500</span>
+      </p>
       <div class="booking-layout">
-        <div class="booking-info">
-          <div class="booking-info-card">
-            <h3>Quick Booking Support</h3>
-            <p>Get fast confirmation for temple tours, outstation rides, custom family plans, and pickup services.</p>
-            <div class="booking-points">
-              <span><i class="fas fa-phone"></i> 9648811494</span>
-              <span><i class="fas fa-phone"></i> 8874704581</span>
-              <span><i class="fas fa-location-dot"></i> Uttar Pradesh route support</span>
-            </div>
-          </div>
-        </div>
         <div class="booking-container">
           <form id="booking-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email">
             <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <select name="pickup" required>
+              <option value="" disabled selected>Pickup Location</option>
+              <option value="varanasi-junction">Varanasi Junction</option>
+              <option value="varanasi-cantt">Banaras Station</option>
+              <option value="varanasi-cantt">Babatpur Airport</option>
+              <option value="varanasi-godowlia">Godowlia </option>
+              <option value="varanasi-assi">Chetaganj</option>
+              <option value="varanasi-dashashwamedh">Lahurabir</option>
+              <option value="varanasi-manikarnika">Saket nagar, Gandhi Nagar</option>
+              <option value="varanasi-Lanka">Lanka Area</option>
+              <option value="varanasi-Bhelupur">Bhelupur</option>
+              <option value="varanasi-Ravindrapuri">Ravindrapuri</option>
+              <option value="varanasi-cantonment">DLW Railway Colony</option>
+              <option value="varanasi-cantonment">Rohania</option>
+              <option value="varanasi-cantonment">Mohansarai</option>
+              <option value="varanasi-cantonment">Rajatalab</option>
+              <option value="varanasi-cantonment">Mirzamurad</option>
+              <option value="varanasi-cantonment">Kachhwan Road</option>
+              <option value="custom">Custom Location</option>
+            </select>
+            <input type="text" id="custom-pickup" name="custom_pickup" placeholder="Enter Your Pickup Location" style="display: none;">
             <select name="destination" required>
               <option value="" disabled selected>Choose Destination</option>
               <option value="varanasi">Varanasi</option>
               <option value="prayagraj">Prayagraj</option>
               <option value="ayodhya">Ayodhya</option>
               <option value="vrindavan">Vrindavan</option>
+              <option value="mathura">Mathura</option>
+              <option value="Maihar Devi">Maihar Devi</option>
+              <option value="agra">Agra</option>
+              <option value="lucknow">Lucknow</option>
+              <option value="gaya">Gaya</option>
+              <option value="bodh-gaya">Bodh Gaya</option>
+              <option value="vindhyachal">Vindhyachal</option>
+              <option value="kashi">Kashi Vishwanath</option>
+              <option value="jaunpur">Jaunpur</option>
+              <option value="azamgarh">Azamgarh</option>
               <option value="custom">Custom Trip</option>
             </select>
+            <input type="text" id="custom-destination" name="custom_destination" placeholder="Enter Your Custom Destination" style="display: none;">
             <select name="vehicle" required>
               <option value="" disabled selected>Choose Vehicle</option>
               <option value="dzire">Swift Dzire</option>
-              <option value="ertiga">Ertiga / Group Cab</option>
+              <option value="ertiga">Ertiga </option>
               <option value="innova">Innova</option>
               <option value="traveller">Traveller</option>
             </select>
+            <select name="payment_method" required>
+              <option value="" disabled selected>Payment Method</option>
+              <option value="cash">Cash on Pickup</option>
+              <option value="card">Credit/Debit Card</option>
+              <option value="upi">UPI</option>
+              <option value="netbanking">Net Banking</option>
+              <option value="wallet">Digital Wallet</option>
+            </select>
+            <p id="payment-mode-note" class="payment-mode-note" aria-live="polite"></p>
+            <input type="hidden" id="custom-preferences-hidden" name="custom_preferences">
             <input type="date" name="date" required>
             <textarea name="requests" placeholder="Any Special Requests?" rows="4"></textarea>
             <button type="submit" class="book-btn">Submit Booking</button>
@@ -294,17 +396,27 @@
 
   <footer class="site-footer">
     <div class="footer-shell">
-      <div>
-        <h3>Binu Tours &amp; Travels</h3>
-        <p>Comfortable rides, spiritual tour planning, and custom travel support for every journey.</p>
-      </div>
-      <div class="footer-contact">
-        <a href="tel:9648811494">9648811494</a>
-        <a href="tel:8874704581">8874704581</a>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3><span class="brand-heading brand-heading-footer">Binu Tours &amp; Travels</span></h3>
+          <p class="footer-tagline">Comfortable rides, spiritual tour planning, and custom travel support for every journey.</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-contact">
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:9648811494">9648811494</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:8874704581">8874704581</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+.env
+node_modules/
+.vercel/
+.idea/
+.chrome-profile*/
+.edge-profile/
+.test-chrome*/
+.test-bg.html
+phone-*.png
+mobile-*.png
+test-*.png
+bg-mobile-current.png
