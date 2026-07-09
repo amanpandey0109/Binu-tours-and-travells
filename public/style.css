@@ -1907,7 +1907,7 @@ img { display: block; width: 100%; }
   }
 
   .navbar {
-    position: sticky;
+    position: static;
   }
 
   .logo {
